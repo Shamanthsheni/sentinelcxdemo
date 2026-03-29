@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Play, RotateCcw, ShieldAlert, CheckCircle, MessageCircle, AlertTriangle, IndianRupee, Activity, ServerCrash } from 'lucide-react';
 import { AreaChart, Area, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
-
-const API_BASE = 'http://localhost:8000';
+import { api } from '../api';
 
 const AnimatedNumber = ({ value }) => {
   const [displayValue, setDisplayValue] = useState(value);
@@ -37,8 +36,7 @@ export default function RajeshDetail({ customerId = 'CUST_4821', onBack }) {
 
   const fetchCustomerData = async () => {
     try {
-      const res = await fetch(`${API_BASE}/customers/${customerId}`);
-      const data = await res.json();
+      const data = await api.getCustomer(customerId);
       setCustomer(data);
       setDemoStages({
          showRootCause: data.risk_score > 65,
@@ -55,8 +53,7 @@ export default function RajeshDetail({ customerId = 'CUST_4821', onBack }) {
     setDemoStages({ showRootCause: false, showSms: false, showPrevented: false });
     
     try {
-      const res = await fetch(`${API_BASE}/demo/rajesh`, { method: 'POST' });
-      const data = await res.json();
+      const data = await api.runRajeshDemo();
       const updatedBackendCustomer = data.customer;
 
       setCustomer(prev => ({ ...prev, risk_score: updatedBackendCustomer.risk_score }));
@@ -85,7 +82,7 @@ export default function RajeshDetail({ customerId = 'CUST_4821', onBack }) {
   const resetDemo = async () => {
     setIsDemoRunning(true);
     try {
-      await fetch(`${API_BASE}/demo/reset`, { method: 'POST' });
+      await api.resetDemo();
       await fetchCustomerData();
     } catch (e) {
       console.error(e);

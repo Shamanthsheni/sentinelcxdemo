@@ -2,14 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Cell } from 'recharts';
 import { ShieldCheck, IndianRupee, AlertTriangle, TrendingDown, Activity } from 'lucide-react';
 
-const API_BASE = 'http://localhost:8000';
+import { api } from '../api';
 
 export default function ImpactMetrics() {
   const [metrics, setMetrics] = useState(null);
 
   useEffect(() => {
-    fetch(`${API_BASE}/metrics`)
-      .then(res => res.json())
+    api.getMetrics()
       .then(data => setMetrics(data))
       .catch(console.error);
   }, []);
