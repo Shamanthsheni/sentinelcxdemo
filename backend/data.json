@@ -1,0 +1,584 @@
+{
+  "customers": [
+    {
+      "id": "CUST_4821",
+      "name": "Rajesh Kumar",
+      "phone": "+91-9876543210",
+      "account": "4821",
+      "risk_score": 45,
+      "status": "normal",
+      "transactions": [
+        {
+          "id": "TXN_001",
+          "time": "11:43 AM",
+          "type": "UPI",
+          "merchant": "Swiggy",
+          "amount": 450,
+          "status": "failed",
+          "reason": "Gateway timeout"
+        },
+        {
+          "id": "TXN_002",
+          "time": "11:44 AM",
+          "type": "UPI",
+          "merchant": "Swiggy",
+          "amount": 450,
+          "status": "failed",
+          "reason": "Gateway timeout"
+        },
+        {
+          "id": "TXN_003",
+          "time": "11:45 AM",
+          "type": "UPI",
+          "merchant": "Swiggy",
+          "amount": 450,
+          "status": "failed",
+          "reason": "Gateway timeout"
+        }
+      ],
+      "root_cause": "Payment gateway timeout detected",
+      "sms_sent": false,
+      "sms_text": "Hi Rajesh, we noticed your payment to Swiggy failed. This was due to a temporary gateway issue now resolved. Your \u20b9450 was not deducted. You can retry now. - Union Bank"
+    },
+    {
+      "id": "CUST_7849",
+      "name": "Priya Sharma",
+      "phone": "+91-7825249794",
+      "account": "6929",
+      "risk_score": 38,
+      "status": "at_risk",
+      "transactions": [
+        {
+          "id": "TXN_100",
+          "time": "03:56 AM",
+          "type": "NEFT",
+          "merchant": "Uber",
+          "amount": 4043,
+          "status": "failed",
+          "reason": "None"
+        }
+      ],
+      "root_cause": "Card blocked",
+      "sms_sent": true,
+      "sms_text": "Hi Priya, a recent transaction update from Union Bank."
+    },
+    {
+      "id": "CUST_9455",
+      "name": "Amit Patel",
+      "phone": "+91-7478079242",
+      "account": "9697",
+      "risk_score": 31,
+      "status": "at_risk",
+      "transactions": [
+        {
+          "id": "TXN_200",
+          "time": "05:34 AM",
+          "type": "IMPS",
+          "merchant": "Ola",
+          "amount": 9417,
+          "status": "failed",
+          "reason": "Invalid PIN"
+        },
+        {
+          "id": "TXN_201",
+          "time": "04:48 PM",
+          "type": "RTGS",
+          "merchant": "Ola",
+          "amount": 4763,
+          "status": "success",
+          "reason": "None"
+        },
+        {
+          "id": "TXN_202",
+          "time": "03:19 PM",
+          "type": "NEFT",
+          "merchant": "Flipkart",
+          "amount": 2190,
+          "status": "pending",
+          "reason": "Insufficient funds"
+        },
+        {
+          "id": "TXN_203",
+          "time": "11:53 AM",
+          "type": "RTGS",
+          "merchant": "Ola",
+          "amount": 9187,
+          "status": "success",
+          "reason": "Insufficient funds"
+        }
+      ],
+      "root_cause": "High velocity transactions",
+      "sms_sent": false,
+      "sms_text": ""
+    },
+    {
+      "id": "CUST_2260",
+      "name": "Sneha Gupta",
+      "phone": "+91-7550321574",
+      "account": "7850",
+      "risk_score": 28,
+      "status": "at_risk",
+      "transactions": [
+        {
+          "id": "TXN_300",
+          "time": "06:10 AM",
+          "type": "UPI",
+          "merchant": "Flipkart",
+          "amount": 8865,
+          "status": "failed",
+          "reason": "Insufficient funds"
+        }
+      ],
+      "root_cause": "Frequent failures",
+      "sms_sent": true,
+      "sms_text": "Hi Sneha, a recent transaction update from Union Bank."
+    },
+    {
+      "id": "CUST_2077",
+      "name": "Vikram Singh",
+      "phone": "+91-8741719939",
+      "account": "4972",
+      "risk_score": 34,
+      "status": "at_risk",
+      "transactions": [
+        {
+          "id": "TXN_400",
+          "time": "10:48 AM",
+          "type": "NEFT",
+          "merchant": "Paytm",
+          "amount": 8034,
+          "status": "failed",
+          "reason": "None"
+        },
+        {
+          "id": "TXN_401",
+          "time": "10:54 AM",
+          "type": "UPI",
+          "merchant": "Amazon",
+          "amount": 2396,
+          "status": "pending",
+          "reason": "None"
+        },
+        {
+          "id": "TXN_402",
+          "time": "11:42 PM",
+          "type": "NEFT",
+          "merchant": "IRCTC",
+          "amount": 4544,
+          "status": "failed",
+          "reason": "Gateway timeout"
+        },
+        {
+          "id": "TXN_403",
+          "time": "12:32 AM",
+          "type": "Card",
+          "merchant": "Paytm",
+          "amount": 6496,
+          "status": "success",
+          "reason": "None"
+        }
+      ],
+      "root_cause": "High velocity transactions",
+      "sms_sent": false,
+      "sms_text": "Hi Vikram, a recent transaction update from Union Bank."
+    },
+    {
+      "id": "CUST_2873",
+      "name": "Anjali Desai",
+      "phone": "+91-7032033237",
+      "account": "8183",
+      "risk_score": 69,
+      "status": "at_risk",
+      "transactions": [],
+      "root_cause": "None",
+      "sms_sent": false,
+      "sms_text": ""
+    },
+    {
+      "id": "CUST_1570",
+      "name": "Rahul Verma",
+      "phone": "+91-8432964717",
+      "account": "9170",
+      "risk_score": 42,
+      "status": "normal",
+      "transactions": [
+        {
+          "id": "TXN_600",
+          "time": "04:01 PM",
+          "type": "UPI",
+          "merchant": "Flipkart",
+          "amount": 9390,
+          "status": "pending",
+          "reason": "None"
+        }
+      ],
+      "root_cause": "None",
+      "sms_sent": false,
+      "sms_text": "Hi Rahul, a recent transaction update from Union Bank."
+    },
+    {
+      "id": "CUST_4039",
+      "name": "Neha Reddy",
+      "phone": "+91-7331320723",
+      "account": "3303",
+      "risk_score": 64,
+      "status": "resolved",
+      "transactions": [
+        {
+          "id": "TXN_700",
+          "time": "11:43 PM",
+          "type": "RTGS",
+          "merchant": "MakeMyTrip",
+          "amount": 850,
+          "status": "success",
+          "reason": "None"
+        },
+        {
+          "id": "TXN_701",
+          "time": "04:09 PM",
+          "type": "IMPS",
+          "merchant": "Ola",
+          "amount": 8004,
+          "status": "failed",
+          "reason": "Gateway timeout"
+        }
+      ],
+      "root_cause": "None",
+      "sms_sent": true,
+      "sms_text": "Hi Neha, a recent transaction update from Union Bank."
+    },
+    {
+      "id": "CUST_2997",
+      "name": "Rohan Joshi",
+      "phone": "+91-9789304296",
+      "account": "8664",
+      "risk_score": 86,
+      "status": "normal",
+      "transactions": [],
+      "root_cause": "None",
+      "sms_sent": false,
+      "sms_text": ""
+    },
+    {
+      "id": "CUST_5710",
+      "name": "Pooja Malhotra",
+      "phone": "+91-9320294982",
+      "account": "9744",
+      "risk_score": 59,
+      "status": "normal",
+      "transactions": [
+        {
+          "id": "TXN_900",
+          "time": "03:54 AM",
+          "type": "IMPS",
+          "merchant": "Uber",
+          "amount": 3301,
+          "status": "pending",
+          "reason": "Insufficient funds"
+        }
+      ],
+      "root_cause": "None",
+      "sms_sent": true,
+      "sms_text": "Hi Pooja, a recent transaction update from Union Bank."
+    },
+    {
+      "id": "CUST_1489",
+      "name": "Karan Kapoor",
+      "phone": "+91-7853544266",
+      "account": "9660",
+      "risk_score": 12,
+      "status": "resolved",
+      "transactions": [
+        {
+          "id": "TXN_1000",
+          "time": "12:50 AM",
+          "type": "Card",
+          "merchant": "IRCTC",
+          "amount": 7707,
+          "status": "pending",
+          "reason": "Gateway timeout"
+        },
+        {
+          "id": "TXN_1001",
+          "time": "07:09 PM",
+          "type": "Card",
+          "merchant": "PhonePe",
+          "amount": 4886,
+          "status": "pending",
+          "reason": "Invalid PIN"
+        },
+        {
+          "id": "TXN_1002",
+          "time": "10:35 AM",
+          "type": "IMPS",
+          "merchant": "Flipkart",
+          "amount": 3237,
+          "status": "failed",
+          "reason": "Invalid PIN"
+        },
+        {
+          "id": "TXN_1003",
+          "time": "01:38 AM",
+          "type": "Card",
+          "merchant": "PhonePe",
+          "amount": 2759,
+          "status": "pending",
+          "reason": "None"
+        }
+      ],
+      "root_cause": "None",
+      "sms_sent": true,
+      "sms_text": "Hi Karan, a recent transaction update from Union Bank."
+    },
+    {
+      "id": "CUST_2245",
+      "name": "Simran Kaur",
+      "phone": "+91-8378387032",
+      "account": "1188",
+      "risk_score": 43,
+      "status": "resolved",
+      "transactions": [
+        {
+          "id": "TXN_1100",
+          "time": "08:27 AM",
+          "type": "UPI",
+          "merchant": "Flipkart",
+          "amount": 3058,
+          "status": "failed",
+          "reason": "None"
+        },
+        {
+          "id": "TXN_1101",
+          "time": "06:05 PM",
+          "type": "NEFT",
+          "merchant": "MakeMyTrip",
+          "amount": 268,
+          "status": "success",
+          "reason": "None"
+        },
+        {
+          "id": "TXN_1102",
+          "time": "07:55 PM",
+          "type": "NEFT",
+          "merchant": "Zomato",
+          "amount": 4457,
+          "status": "success",
+          "reason": "None"
+        }
+      ],
+      "root_cause": "None",
+      "sms_sent": true,
+      "sms_text": ""
+    },
+    {
+      "id": "CUST_9535",
+      "name": "Arjun Bhatia",
+      "phone": "+91-7501383798",
+      "account": "9556",
+      "risk_score": 75,
+      "status": "resolved",
+      "transactions": [
+        {
+          "id": "TXN_1200",
+          "time": "11:06 PM",
+          "type": "Card",
+          "merchant": "Paytm",
+          "amount": 9410,
+          "status": "pending",
+          "reason": "None"
+        }
+      ],
+      "root_cause": "None",
+      "sms_sent": true,
+      "sms_text": "Hi Arjun, a recent transaction update from Union Bank."
+    },
+    {
+      "id": "CUST_7791",
+      "name": "Kavita Rathi",
+      "phone": "+91-8370096093",
+      "account": "6647",
+      "risk_score": 40,
+      "status": "resolved",
+      "transactions": [],
+      "root_cause": "None",
+      "sms_sent": true,
+      "sms_text": ""
+    },
+    {
+      "id": "CUST_6326",
+      "name": "Suresh Menon",
+      "phone": "+91-9571474646",
+      "account": "9194",
+      "risk_score": 77,
+      "status": "resolved",
+      "transactions": [],
+      "root_cause": "None",
+      "sms_sent": false,
+      "sms_text": "Hi Suresh, a recent transaction update from Union Bank."
+    },
+    {
+      "id": "CUST_1867",
+      "name": "Divya Nair",
+      "phone": "+91-9250620372",
+      "account": "2657",
+      "risk_score": 43,
+      "status": "normal",
+      "transactions": [
+        {
+          "id": "TXN_1500",
+          "time": "11:09 AM",
+          "type": "UPI",
+          "merchant": "PhonePe",
+          "amount": 1311,
+          "status": "failed",
+          "reason": "None"
+        },
+        {
+          "id": "TXN_1501",
+          "time": "07:06 AM",
+          "type": "UPI",
+          "merchant": "Uber",
+          "amount": 1290,
+          "status": "success",
+          "reason": "Invalid PIN"
+        },
+        {
+          "id": "TXN_1502",
+          "time": "09:49 AM",
+          "type": "Card",
+          "merchant": "Uber",
+          "amount": 8554,
+          "status": "pending",
+          "reason": "None"
+        }
+      ],
+      "root_cause": "None",
+      "sms_sent": true,
+      "sms_text": ""
+    },
+    {
+      "id": "CUST_1392",
+      "name": "Ravi Iyer",
+      "phone": "+91-9111296585",
+      "account": "8054",
+      "risk_score": 12,
+      "status": "normal",
+      "transactions": [
+        {
+          "id": "TXN_1600",
+          "time": "10:31 AM",
+          "type": "IMPS",
+          "merchant": "Uber",
+          "amount": 3349,
+          "status": "success",
+          "reason": "Gateway timeout"
+        }
+      ],
+      "root_cause": "None",
+      "sms_sent": false,
+      "sms_text": "Hi Ravi, a recent transaction update from Union Bank."
+    },
+    {
+      "id": "CUST_1966",
+      "name": "Meera Pillai",
+      "phone": "+91-8553324274",
+      "account": "1138",
+      "risk_score": 87,
+      "status": "at_risk",
+      "transactions": [
+        {
+          "id": "TXN_1700",
+          "time": "11:34 AM",
+          "type": "Card",
+          "merchant": "Myntra",
+          "amount": 9568,
+          "status": "failed",
+          "reason": "None"
+        },
+        {
+          "id": "TXN_1701",
+          "time": "05:36 PM",
+          "type": "NEFT",
+          "merchant": "Amazon",
+          "amount": 734,
+          "status": "failed",
+          "reason": "None"
+        }
+      ],
+      "root_cause": "Card blocked",
+      "sms_sent": false,
+      "sms_text": "Hi Meera, a recent transaction update from Union Bank."
+    },
+    {
+      "id": "CUST_9712",
+      "name": "Aditya Bose",
+      "phone": "+91-6629178141",
+      "account": "6847",
+      "risk_score": 20,
+      "status": "resolved",
+      "transactions": [
+        {
+          "id": "TXN_1800",
+          "time": "04:58 PM",
+          "type": "RTGS",
+          "merchant": "IRCTC",
+          "amount": 3211,
+          "status": "failed",
+          "reason": "Gateway timeout"
+        },
+        {
+          "id": "TXN_1801",
+          "time": "09:46 PM",
+          "type": "IMPS",
+          "merchant": "PhonePe",
+          "amount": 9043,
+          "status": "pending",
+          "reason": "None"
+        },
+        {
+          "id": "TXN_1802",
+          "time": "07:29 AM",
+          "type": "UPI",
+          "merchant": "PhonePe",
+          "amount": 7196,
+          "status": "failed",
+          "reason": "Gateway timeout"
+        },
+        {
+          "id": "TXN_1803",
+          "time": "02:53 AM",
+          "type": "Card",
+          "merchant": "IRCTC",
+          "amount": 4102,
+          "status": "failed",
+          "reason": "Insufficient funds"
+        }
+      ],
+      "root_cause": "None",
+      "sms_sent": false,
+      "sms_text": ""
+    },
+    {
+      "id": "CUST_6048",
+      "name": "Swati Das",
+      "phone": "+91-7678654773",
+      "account": "4228",
+      "risk_score": 62,
+      "status": "normal",
+      "transactions": [],
+      "root_cause": "None",
+      "sms_sent": true,
+      "sms_text": "Hi Swati, a recent transaction update from Union Bank."
+    }
+  ],
+  "impactMetrics": {
+    "totalAtRisk": 6,
+    "potentialChurnValue": 1978588,
+    "topComplaintDrivers": [
+      "UPI Failures",
+      "Hidden Fees",
+      "Server Downtime"
+    ],
+    "resolutionRate": 72
+  }
+}
