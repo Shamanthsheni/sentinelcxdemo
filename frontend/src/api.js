@@ -1,4 +1,4 @@
-const API_BASE = 'https://sentinelcx-backend.vercel.app';
+const API_BASE = 'https://sentinelcxdemo.vercel.app';
 
 export const api = {
   // Get all customers
